@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Café Shop</h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+          
+        </div>
+    </header>
+    
+    <section id="home" >
+        <div class="hero">
+            <h2><span style="color: rgb(210, 154, 14);" >Welcome</span> to Café Shop </h2>
+            <p>Your favorite place for coffee and delicious treats.</p>
+            <a href="#menu" class="btn">Check Our Menu</a>
+        </div>
+    </section>
+    
+
+    <!-- Menu Section -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+        <div class="menu-card">
+            <img src="2.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>A perfect blend of coffee and steamed milk.</p>
+            <p class="price">Price: $5.00</p>
+        </div>
+        <div class="menu-card">
+            <img src="3.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>Smooth and creamy espresso-based drink.</p>
+            <p class="price">Price: $4.50</p>
+        </div>
+        <div class="menu-card">
+            <img src="4.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and moist chocolate delight.</p>
+            <p class="price">Price: $6.00</p>
+        </div>
+        <div class="menu-card">
+            <img src="5.jpg" alt="Croissant">
+            <h3>Croissant</h3>
+            <p>Buttery and flaky French pastry.</p>
+            <p class="price">Price: $3.50</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="1.jpg" alt="Cozy Cafe Interior">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Café Shop! We take pride in serving the finest coffee and freshly baked goods, crafted with love and precision. Whether you're here to work, catch up with friends, or just enjoy a moment of peace, our cozy atmosphere and friendly staff ensure a memorable experience.</p>
+            <ul>
+                <li>Freshly brewed coffee made from premium beans</li>
+                <li>A wide variety of pastries and desserts</li>
+                <li>Comfortable seating and free Wi-Fi</li>
+                <li>Committed to quality and customer satisfaction</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="bookTable">
+    <h2>Contact</h2>
+    <p>Reserve your table and enjoy a delightful experience. Fill out the form below to secure your booking.</p>
+    <div class="booking-container">
+         <!-- Cafe Details -->
+         <div class="cafe-details">
+            <h3>Contact Information</h3>
+            <p>📍 <strong>Location:</strong> 123 Coffee Street, New York, NY</p>
+            <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
+            <p>📧 <strong>Email:</strong> reservations@cafeshop.com</p>
+            <p>⏰ <strong>Opening Hours:</strong></p>
+            <ul>
+                <li>Monday - Friday: 8:00 AM - 10:00 PM</li>
+                <li>Saturday - Sunday: 9:00 AM - 11:00 PM</li>
+            </ul>
+        </div>
+
+        <!-- Booking Form -->
+        <form id="contact" class="form-section">
+            <h3>Book the table</h3>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="people">Number of Guests</label>
+                <select id="people" name="people" required>
+                    <option value="" disabled selected>Select number of guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Special Requests (Optional)</label>
+                <textarea id="message" name="message" placeholder="Add any special requests or notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn">Book the Table</button>
+        </form>
+
+       
+    </div>
+</section>
+
+ 
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Café Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
